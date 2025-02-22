@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# sudo skipped
+for command in mount umount pacman su shutdown poweroff reboot rkhunter; do
+  alias $command="sudo $command"
+done
+unset command
+
+alias \
+  startx="startx $XINITRC" \
+  cp="cp -iv" \
+  mv="mv -iv" \
+  rm="rm -vI" \
+  ping="ping -c 3 google.com" \
+  ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/' \
+  v="nvim" \
+  e="$EDITOR" \
+  p="pacman" \
+  pcdl="pacman -Syyuw --noconfirm" \
+  ls="exa" \
+  la="exa -a --color=always --group-directories-first" \
+  ll="exa -al --color=always --group-directories-first" \
+  lsblk="lsblk -f" \
+  grep="grep --color=auto" \
+  diff="diff --color=auto" \
+  pkill="pkill -e" \
+  lf="lfc" \
+  ncdu="ncdu --show-hidden --show-itemcount --show-graph" \
+  spotify-play="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Play" \
+  spotify-pause="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause" \
+  dp="xfreerdp3 -grab-keyboard /v:192.168.122.55 /u:nilesh /p:9029 /size:100% /d: /dynamic-resolution /gfx:progresion:on" \
+  web="brave --app='https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=KEEPLEARNING'" \
+  ex="extract *.zip; rm *.zip" \
+  tm="tmux attach -t 0" \
+  nvchad="NVIM_APPNAME=NvChad nvim" \
+  lunar="NVIM_APPNAME=Lunar nvim" \
+  lazy="NVIM_APPNAME=Lazy nvim" \
+  v="NVIM_APPNAME=Lazy nvim" \
