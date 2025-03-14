@@ -36,14 +36,9 @@ super + shift + l
 super + v
  $TERMINAL -e "nvim"
 
-super + s
- spotify
+#super + c
+# clipmenu -l 23
 
-super + e
- emacsclient -c -a 'emacs' --eval '(dashboard-refresh-buffer)'
-
-super + c
- clipmenu -l 23
 
 # Scripts
 
