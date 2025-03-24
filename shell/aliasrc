@@ -13,7 +13,6 @@ alias \
   rm="rm -vI" \
   ping="ping -c 3 google.com" \
   ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/' \
-  v="nvim" \
   e="$EDITOR" \
   p="pacman" \
   pcdl="pacman -Syyuw --noconfirm" \
