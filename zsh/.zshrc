@@ -50,3 +50,4 @@ eval "$(starship init zsh)"
 
 # Changing cursor from box to line
 echo -ne '\e[5 q'
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
