@@ -80,3 +80,10 @@ wget/
 wlogout/
 xsettingsd/
 Cursor
+.android/
+.wrangler/
+Google/
+Windsurf/
+appimagelauncher.cfg
+solana/
+systemd/

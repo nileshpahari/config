@@ -1,4 +1,4 @@
-@define-color bar-bg #141635;
+/*@define-color bar-bg #141635;
 @define-color main-bg #141635;
 @define-color main-fg #D08770;
 
@@ -7,3 +7,24 @@
 
 @define-color wb-hvr-bg #a6a6a6;
 @define-color wb-hvr-fg #262626;
+*/
+
+
+@define-color bar-bg rgba(0, 0, 0, 0.0);
+/* Softer teal, matches background */
+@define-color main-bg #FDEFF2;
+/* Very light pastel pink */
+@define-color main-fg #3C3C3C;
+/* Dark gray for good contrast */
+
+@define-color wb-act-bg #A7C7C5;
+/* White active item background */
+@define-color wb-act-fg #2C2C2C;
+/* Dark gray text */
+
+@define-color wb-hvr-bg #8CB3B0;
+/* Hover background: blush pink */
+@define-color wb-hvr-fg #1F1F1F;
+/* Hover text: dark gray */
+
+/* Add this to style the tray if not already present */
