@@ -1,6 +1,7 @@
 ### 1. EXPORTS (Environment variables)
 export TERM="xterm-256color"
 export EDITOR="nvim"
+export CODE="code"
 export VISUAL="nvim"
 export PATH="$HOME/.local/share/cargo/bin:$PATH"
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
@@ -26,6 +27,13 @@ bindkey "\e[3~" delete-char
 bindkey "\e[1;5D" backward-word  # Ctrl+Left
 bindkey "\e[1;5C" forward-word   # Ctrl+Right
 bindkey "\e[3;5~" kill-word      # Ctrl+Del
+
+# tmux sessionizer
+bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s '\eh' "tmux-sessionizer -s 0\n"
+bindkey -s '\et' "tmux-sessionizer -s 1\n"
+bindkey -s '\en' "tmux-sessionizer -s 2\n"
+bindkey -s '\es' "tmux-sessionizer -s 3\n"
 
 # Cursor shape for vi modes
 function zle-keymap-select {
