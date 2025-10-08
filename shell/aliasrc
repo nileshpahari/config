@@ -14,7 +14,6 @@ alias \
   ping="ping -c 3 google.com" \
   ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/' \
   e="$EDITOR" \
-  p="pacman" \
   pcdl="pacman -Syyuw --noconfirm" \
   ls="exa" \
   la="exa -a --color=always --group-directories-first" \
@@ -27,8 +26,6 @@ alias \
   ncdu="ncdu --show-hidden --show-itemcount --show-graph" \
   spotify-play="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Play" \
   spotify-pause="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause" \
-  dp="xfreerdp3 -grab-keyboard /v:192.168.122.55 /u:nilesh /p:9029 /size:100% /d: /dynamic-resolution /gfx:progresion:on" \
-  web="brave --app='https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=KEEPLEARNING'" \
   ex="extract *.zip; rm *.zip" \
   tm="tmux attach -t 0" \
   nvchad="NVIM_APPNAME=NvChad nvim" \
@@ -36,4 +33,6 @@ alias \
   lazy="NVIM_APPNAME=Lazy nvim" \
   v="NVIM_APPNAME=Lazy nvim" \
   git-update='git add . && git commit -m "update state" && git push' \
-  git-sol='git add . && git commit -m "add solns" && git push'
+  git-sol='git add . && git commit -m "add solns" && git push' \
+  gits='git status' \
+  gitp='git push'
