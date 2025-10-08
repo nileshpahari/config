@@ -36,4 +36,5 @@ alias \
   git-sol='git add . && git commit -m "add solns" && git push' \
   gits='git status' \
   gitp='git push' \
-  gitc='git commit -m'
+  gitc='git commit -m' \
+  gita='git add '
