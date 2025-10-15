@@ -33,11 +33,11 @@ XF86HomePage
 super + shift + l
  i3lock-fancy
 
-super + v
- $TERMINAL -e "nvim"
+#super + v
+# $TERMINAL -e "nvim"
 
-#super + c
-# clipmenu -l 23
+super + v
+ clipmenu -l 23
 
 
 # Scripts
