@@ -30,7 +30,6 @@ alias \
   tm="tmux attach -t 0" \
   nvchad="NVIM_APPNAME=NvChad nvim" \
   lunar="NVIM_APPNAME=Lunar nvim" \
-  lazy="NVIM_APPNAME=Lazy nvim" \
   lvim="NVIM_APPNAME=Lazy nvim" \
   v="nvim" \
   git-update='git add . && git commit -m "update state" && git push' \
