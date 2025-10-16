@@ -1,8 +1,6 @@
 zsh/.zsh_history
 BraveSoftware/
 Code - OSS/
-Code/
-Debauchee/
 Electron/
 GIMP/
 Kitware/
@@ -10,7 +8,6 @@ Kiwix/
 Kvantum/
 Lazy/
 MangoHud/
-NvChad/
 Postman/
 QtProject.conf
 QtProject/
@@ -34,8 +31,6 @@ enlisted/
 freerdp/
 github-copilot/
 htop/
-joplin-desktop/
-joplin/
 kclockdrc
 kclockrc
 kde.org/
@@ -85,10 +80,9 @@ Windsurf/
 appimagelauncher.cfg
 solana/
 systemd/
-Claude/
 calibre/
 claude-linux-client/
-fastanime/
 fish/
 warp-terminal/
 hypr
+tmux

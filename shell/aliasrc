@@ -28,8 +28,6 @@ alias \
   spotify-pause="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause" \
   ex="extract *.zip; rm *.zip" \
   tm="tmux attach -t 0" \
-  nvchad="NVIM_APPNAME=NvChad nvim" \
-  lunar="NVIM_APPNAME=Lunar nvim" \
   lvim="NVIM_APPNAME=Lazy nvim" \
   v="nvim" \
   git-update='git add . && git commit -m "update state" && git push' \
