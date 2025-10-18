@@ -56,7 +56,6 @@ obsidian/
 okularpartrc
 okularrc
 pavucontrol.ini
-pcmanfm-qt/
 pulse/
 qBittorrent/
 qt5ct/
@@ -86,3 +85,4 @@ fish/
 warp-terminal/
 hypr
 tmux
+pcmanfm*
