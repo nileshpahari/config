@@ -2,37 +2,38 @@
 
 # sudo skipped
 for command in mount umount pacman su shutdown poweroff reboot rkhunter; do
-  alias $command="sudo $command"
+	alias $command="sudo $command"
 done
 unset command
 
 alias \
-  startx="startx $XINITRC" \
-  cp="cp -iv" \
-  mv="mv -iv" \
-  rm="rm -vI" \
-  ping="ping -c 3 google.com" \
-  ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/' \
-  e="$EDITOR" \
-  pcdl="pacman -Syyuw --noconfirm" \
-  ls="exa" \
-  la="exa -a --color=always --group-directories-first" \
-  ll="exa -al --color=always --group-directories-first" \
-  lsblk="lsblk -f" \
-  grep="grep --color=auto" \
-  diff="diff --color=auto" \
-  pkill="pkill -e" \
-  lf="lfc" \
-  ncdu="ncdu --show-hidden --show-itemcount --show-graph" \
-  spotify-play="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Play" \
-  spotify-pause="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause" \
-  ex="extract *.zip; rm *.zip" \
-  tm="tmux attach -t 0" \
-  lvim="NVIM_APPNAME=Lazy nvim" \
-  v="nvim" \
-  git-update='git add . && git commit -m "update state" && git push' \
-  git-sol='git add . && git commit -m "add solns" && git push' \
-  gits='git status' \
-  gitp='git push' \
-  gitc='git commit -m' \
-  gita='git add '
+	startx="startx $XINITRC" \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	ping="ping -c 3 google.com" \
+	ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/' \
+	e="$EDITOR" \
+	pcdl="pacman -Syyuw --noconfirm" \
+	ls="exa" \
+	la="exa -a --color=always --group-directories-first" \
+	ll="exa -al --color=always --group-directories-first" \
+	lsblk="lsblk -f" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	pkill="pkill -e" \
+	lf="lfc" \
+	ncdu="ncdu --show-hidden --show-itemcount --show-graph" \
+	spotify-play="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Play" \
+	spotify-pause="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause" \
+	ex="extract *.zip; rm *.zip" \
+	tm="tmux attach -t 0" \
+	lvim="NVIM_APPNAME=Lazy nvim" \
+	v="nvim" \
+	git-update='git add . && git commit -m "update state" && git push' \
+	git-sol='git add . && git commit -m "add solns" && git push' \
+	gits='git status' \
+	gitp='git push' \
+	gitc='git commit -m' \
+	gita='git add ' \
+	dump='nvim ~/garbage/dump.md'

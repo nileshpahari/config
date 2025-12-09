@@ -78,3 +78,6 @@ eval "$(starship init zsh)"
 
 ### 8. FUN (Optional)
 # cowsay "$(shuf -n 1 ~/.local/share/words/words.txt)"
+
+# temp
+eval "$(fnm env --use-on-cd --shell zsh)"

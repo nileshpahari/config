@@ -1,0 +1,73 @@
+/* ~/.config/rofi/themes/navy.rasi - revised (Rofi 1.7+ friendly) */
+
+* {
+    /* Palette */
+    bg:        #0e1120;
+    bg-alt:    #1a1d2b;
+    bg-hover:  #3a4054;
+    fg:        #d4d7e4;
+    fg-alt:    #ffffff;
+    accent:    #2a2e3f;
+
+    font: "JetBrains Mono 11";
+}
+
+/* Window and layout */
+window {
+    background-color: @bg;
+    border: 0px;
+    padding: 20px;
+}
+
+mainbox {
+    padding: 0px;
+}
+
+/* Input area */
+inputbar {
+    background-color: @bg-alt;
+    text-color: @fg;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+prompt {
+    text-color: @fg;
+}
+
+entry {
+    text-color: @fg;
+}
+
+/* List and items */
+listview {
+    background-color: @bg;
+    margin: 10px 0px;
+}
+
+element {
+    background-color: @bg-alt;
+    text-color: @fg;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Selected (chosen) item */
+element:selected {
+    background-color: @accent;
+    text-color: @fg-alt;
+}
+
+/* Highlighted (keyboard/hover highlight) item */
+element:highlighted {
+    background-color: @bg-hover;
+    text-color: @fg-alt;
+}
+
+/* Scrollbar */
+scrollbar {
+    width: 6px;
+    handle-width: 6px;
+    background-color: @bg-alt;
+    handle-color: @accent;
+}
