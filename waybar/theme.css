@@ -1,29 +1,29 @@
-@define-color bar-bg rgba(0, 0, 0, 0.0);
+/* @define-color bar-bg rgba(0, 0, 0, 0.0); */
 /* Softer teal, matches background */
 /* @define-color main-bg #FDEFF2; */
 /* Very light pastel pink */
-@define-color main-fg #3C3C3C;
+/* @define-color main-fg #3C3C3C; */
 /* Dark gray for good contrast */
 
-@define-color wb-act-bg #A7C7C5;
+/* @define-color wb-act-bg #A7C7C5; */
 /* White active item background */
-@define-color wb-act-fg #2C2C2C;
+/* @define-color wb-act-fg #2C2C2C; */
 /* Dark gray text */
 
-@define-color wb-hvr-bg #8CB3B0;
+/* @define-color wb-hvr-bg #8CB3B0; */
 /* Hover background: blush pink */
-@define-color wb-hvr-fg #1F1F1F;
+/* @define-color wb-hvr-fg #1F1F1F; */
 /* Hover text: dark gray */
 
 
 
-@define-color bar-bg #191925;
+@define-color bar-bg rgba(0, 0, 0, 0.0);
 /* Deep navy background */
-@define-color main-bg #191925;
+@define-color main-bg rgba(0, 0, 0, 0.0);
 /* @define-color main-bg #1a1d2b; */
 /* Slightly lighter navy for modules */
 
-@define-color main-fg #d4d7e4;
+@define-color main-fg black;
 /* Soft gray-white text like in the screenshot */
 
 @define-color wb-act-bg #2a2e3f;
@@ -37,3 +37,5 @@
 
 @define-color wb-hvr-fg #ffffff;
 /* Hover text */
+
+

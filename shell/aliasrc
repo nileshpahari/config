@@ -36,4 +36,5 @@ alias \
 	gitp='git push' \
 	gitc='git commit -m' \
 	gita='git add ' \
-	dump='nvim ~/garbage/dump.md'
+	dump='nvim ~/garbage/dump.md' \
+	spd='source ~/.local/share/virtualenvs/djangodev/bin/activate'

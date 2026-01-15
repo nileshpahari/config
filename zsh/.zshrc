@@ -52,22 +52,6 @@ zmodload zsh/complist
 compinit -d "${XDG_CACHE_HOME:-$HOME/.cache}/zsh/zcompdump"  # Cache compinit
 _comp_options+=(globdots)  # Complete hidden files
 
-### 5. PLUGINS (Order matters!)
-
-# Auto-suggestions (after history search)
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-
-# Syntax highlighting (MUST BE LAST)
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,underline
-ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,underline
-ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
-
-# History substring search (requires vi mode)
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh 2>/dev/null
-bindkey '^[[A' history-substring-search-up    # Up arrow
-bindkey '^[[B' history-substring-search-down  # Down arrow
-
 
 ### 6. ALIASES (After plugins)
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && \
@@ -76,8 +60,24 @@ bindkey '^[[B' history-substring-search-down  # Down arrow
 ### 7. PROMPT (Starship last)
 eval "$(starship init zsh)"
 
-### 8. FUN (Optional)
-# cowsay "$(shuf -n 1 ~/.local/share/words/words.txt)"
-
 # temp
 eval "$(fnm env --use-on-cd --shell zsh)"
+
+# fzf history
+source <(fzf --zsh)
+
+# Auto-suggestions (after history search)
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+
+# History substring search (requires vi mode)
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh 2>/dev/null
+bindkey '^[[A' history-substring-search-up    # Up arrow
+bindkey '^[[B' history-substring-search-down  # Down arrow
+
+# Syntax highlighting (MUST BE LAST)
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,underline
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,underline
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
+
+
