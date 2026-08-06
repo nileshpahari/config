@@ -11,7 +11,6 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -vI" \
-	ping="ping -c 3 google.com" \
 	ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/' \
 	e="$EDITOR" \
 	pcdl="pacman -Syyuw --noconfirm" \
@@ -22,7 +21,7 @@ alias \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	pkill="pkill -e" \
-	lf="lfc" \
+	lf="yazi" \
 	ncdu="ncdu --show-hidden --show-itemcount --show-graph" \
 	spotify-play="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Play" \
 	spotify-pause="dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Pause" \
