@@ -77,6 +77,37 @@
           "modalities": { "input": ["text", "image", "pdf"], "output": ["text"] }
         }
       }
+    },
+    "omniroute": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "OmniRoute",
+      "options": {
+        "baseURL": "http://localhost:20128/v1",
+        "apiKey": "sk-2adb0ecc2404b059-5db8df-4004e426"
+      },
+      "models": {
+        "kr/claude-opus-5": {
+          "name": "kr/claude-opus-5"
+        },
+        "kr/claude-sonnet-5-thinking": {
+          "name": "kr/claude-sonnet-5-thinking"
+        },
+        "kr/claude-opus-4.8": {
+          "name": "kr/claude-opus-4.8"
+        },
+        "kr/claude-opus-4.7": {
+          "name": "kr/claude-opus-4.7"
+        },
+        "kr/claude-opus-4.6": {
+          "name": "kr/claude-opus-4.6"
+        },
+        "kr/claude-sonnet-4.6": {
+          "name": "kr/claude-sonnet-4.6"
+        },
+        "kr/claude-opus-4.5": {
+          "name": "kr/claude-opus-4.5"
+        }
+      }
     }
   }
 }

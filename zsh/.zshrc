@@ -19,6 +19,7 @@ setopt hist_ignore_space     # Ignore space-prefixed commands
 
 ### 3. VI MODE (Keybindings and cursor)
 bindkey -v  # Enable vi mode
+export KEYTIMEOUT=1
 
 # Fix Home/End/Del keys
 bindkey "\e[H" beginning-of-line
